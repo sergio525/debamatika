@@ -1,0 +1,41 @@
+{% trans_default_domain 'menu' %}
+
+<nav class="sidebar">
+
+    <div class="sidebar-content ">
+        <a class="sidebar-brand" href="/fichaje/public">
+            <img src="{{ asset('images/logoblanco.png') }}" style='width: 100%;'>
+            
+        </a>
+
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ path('empleado_index') }}">
+                    <span class="align-middle">Empleado</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ path('horario_index') }}">
+                    <span class="align-middle">Horario</span>
+                </a>
+            </li>        
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ path('incidencia_index') }}">
+                    <span class="align-middle">Incidencia</span>
+                </a>
+            </li> 
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{ path('calendario_index') }}">
+                    <span class="align-middle">Calendario</span>
+                </a>
+            </li> 
+            <!--<li class="sidebar-item">
+                <a class="sidebar-link" href="{{ path('incidencia_index') }}">
+                    <span class="align-middle">Incidencias</span>
+                </a>
+            </li> -->
+            
+        </ul>
+    </div>
+
+</nav>
